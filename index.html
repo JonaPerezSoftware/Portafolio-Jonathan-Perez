@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Jonathan Abraham Pérez Chiquito — Estudiante de Ingeniería de Software. Desarrollo web, proyectos y habilidades técnicas.">
+  <meta name="author" content="Jonathan Abraham Pérez Chiquito">
+  <meta name="theme-color" content="#050A18">
+
+  <title>Jonathan Pérez | Portafolio — Software Engineering</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       STARFIELD CANVAS (Background)
+       ═══════════════════════════════════════════ -->
+  <canvas id="stars-canvas" aria-hidden="true" style="position:fixed;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none;"></canvas>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#inicio" class="navbar__logo" aria-label="Inicio">
+        <span class="navbar__logo-icon">🚀</span>
+        <span>JP</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="navbar__menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="#inicio" class="navbar__link active" role="menuitem">Inicio</a></li>
+          <li role="none"><a href="#sobre-mi" class="navbar__link" role="menuitem">Sobre Mí</a></li>
+          <li role="none"><a href="#habilidades" class="navbar__link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#proyectos" class="navbar__link" role="menuitem">Proyectos</a></li>
+          <li role="none"><a href="design-system.html" class="navbar__link" role="menuitem">Design System</a></li>
+          <li role="none"><a href="#contacto" class="navbar__link" role="menuitem">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile overlay -->
+    <div class="navbar__overlay" id="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════════ -->
+  <main>
+
+    <!-- ──────────────────────────────────────────
+         HERO / INICIO
+         ────────────────────────────────────────── -->
+    <section id="inicio" class="hero section">
+      <!-- Floating particles -->
+      <div class="hero__particles" aria-hidden="true">
+        <div class="hero__particle hero__particle--1"></div>
+        <div class="hero__particle hero__particle--2"></div>
+        <div class="hero__particle hero__particle--3"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__greeting">👋 ¡Hola! Soy</p>
+        <h1 class="hero__name">
+          Jonathan Abraham<br>
+          <span class="text-gradient">Pérez Chiquito</span>
+        </h1>
+        <p class="hero__title">Estudiante de Ingeniería de Software &bull; Apasionado por el Desarrollo Web</p>
+        <div class="hero__cta">
+          <a href="#proyectos" class="btn btn--primary">🌟 Ver Proyectos</a>
+          <a href="#contacto" class="btn btn--secondary">📬 Contáctame</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────
+         SOBRE MÍ
+         ────────────────────────────────────────── -->
+    <section id="sobre-mi" class="section about">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">// Sobre Mí</span>
+          <h2 class="section__title">Conóceme</h2>
+          <div class="section__divider"></div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__avatar-wrapper animate-on-scroll animate-left">
+            <div class="about__avatar-glow" aria-hidden="true"></div>
+            <figure>
+              <img
+                src="assets/images/avatar.png"
+                alt="Fotografía de Jonathan Abraham Pérez Chiquito"
+                class="about__avatar"
+                width="260"
+                height="260"
+                loading="lazy"
+              >
+            </figure>
+          </div>
+
+          <div class="about__text animate-on-scroll animate-right">
+            <h3>Jonathan Abraham <span class="text-gradient">Pérez Chiquito</span></h3>
+            <p class="about__bio">
+              Soy estudiante de Ingeniería de Software apasionado por crear experiencias digitales que generen impacto.
+              Me especializo en desarrollo web full-stack, combinando creatividad con código limpio para construir soluciones funcionales y visualmente atractivas.
+              Actualmente enfocado en expandir mis habilidades en frameworks modernos de frontend y backend.
+            </p>
+
+            <div class="about__details">
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">🎓</div>
+                <div>
+                  <span class="about__detail-label">Formación</span>
+                  <p class="about__detail-value">Ingeniería de Software</p>
+                </div>
+              </div>
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">📍</div>
+                <div>
+                  <span class="about__detail-label">Enfoque</span>
+                  <p class="about__detail-value">Desarrollo Web Full-Stack</p>
+                </div>
+              </div>
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">💡</div>
+                <div>
+                  <span class="about__detail-label">Intereses</span>
+                  <p class="about__detail-value">UI/UX, Open Source</p>
+                </div>
+              </div>
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">🌐</div>
+                <div>
+                  <span class="about__detail-label">Idiomas</span>
+                  <p class="about__detail-value">Español, Inglés</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__cta">
+              <a href="#contacto" class="btn btn--primary">📬 Contactar</a>
+              <a href="design-system.html" class="btn btn--ghost">🎨 Design System</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────
+         HABILIDADES / SKILLS
+         ────────────────────────────────────────── -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">// Habilidades</span>
+          <h2 class="section__title">Tech Stack</h2>
+          <div class="section__divider"></div>
+          <p class="section__description">Tecnologías y herramientas con las que trabajo y estoy aprendiendo.</p>
+        </div>
+
+        <!-- Category filters -->
+        <div class="skills__categories animate-on-scroll" role="tablist" aria-label="Filtrar habilidades por categoría">
+          <button class="skills__category-btn active" data-category="all" role="tab" aria-selected="true">Todas</button>
+          <button class="skills__category-btn" data-category="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="skills__category-btn" data-category="backend" role="tab" aria-selected="false">Backend</button>
+          <button class="skills__category-btn" data-category="database" role="tab" aria-selected="false">Bases de datos</button>
+          <button class="skills__category-btn" data-category="tools" role="tab" aria-selected="false">Herramientas</button>
+        </div>
+
+        <div class="skills__grid stagger-children" id="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">🌐</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">HTML5</p>
+              <span class="skill-badge__level">Avanzado</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="90"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">🎨</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">CSS3</p>
+              <span class="skill-badge__level">Avanzado</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="85"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">⚡</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">JavaScript</p>
+              <span class="skill-badge__level">Intermedio-Avanzado</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">⚛️</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">React</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">💚</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Vue.js</p>
+              <span class="skill-badge__level">Básico</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="35"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="frontend">
+            <div class="skill-badge__icon" aria-hidden="true">🅰️</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Angular</p>
+              <span class="skill-badge__level">Aprendiendo</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="25"></div></div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-badge animate-on-scroll" data-category="backend">
+            <div class="skill-badge__icon" aria-hidden="true">🟢</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Node.js</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="backend">
+            <div class="skill-badge__icon" aria-hidden="true">🚂</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Express.js</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="backend">
+            <div class="skill-badge__icon" aria-hidden="true">🐍</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Python</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="backend">
+            <div class="skill-badge__icon" aria-hidden="true">🐘</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">PHP / Laravel</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+            </div>
+          </div>
+
+          <!-- Bases de datos -->
+          <div class="skill-badge animate-on-scroll" data-category="database">
+            <div class="skill-badge__icon" aria-hidden="true">🗄️</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">MySQL</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="database">
+            <div class="skill-badge__icon" aria-hidden="true">🐘</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">PostgreSQL</p>
+              <span class="skill-badge__level">Básico</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="40"></div></div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="skill-badge animate-on-scroll" data-category="tools">
+            <div class="skill-badge__icon" aria-hidden="true">🔀</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Git / GitHub</p>
+              <span class="skill-badge__level">Avanzado</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="80"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="tools">
+            <div class="skill-badge__icon" aria-hidden="true">💜</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">VS Code</p>
+              <span class="skill-badge__level">Avanzado</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="85"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="tools">
+            <div class="skill-badge__icon" aria-hidden="true">🎨</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Figma</p>
+              <span class="skill-badge__level">Básico</span>
+              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="35"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────
+         PROYECTOS
+         ────────────────────────────────────────── -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">// Proyectos</span>
+          <h2 class="section__title">Trabajo Destacado</h2>
+          <div class="section__divider"></div>
+          <p class="section__description">Una selección de proyectos académicos, personales y profesionales.</p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar animate-on-scroll" role="toolbar" aria-label="Filtrar proyectos">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="html">HTML</button>
+          <button class="filter-btn" data-filter="css">CSS</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="node">Node.js</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__grid">
+
+          <!-- Project 1: La Pequeña Zarahy -->
+          <article class="card card-project animate-on-scroll" data-technologies="html,css,javascript">
+            <div class="card-project__image-wrapper">
+              <figure>
+                <img
+                  src="assets/images/project-zarahy.png"
+                  alt="Captura del sitio web La Pequeña Zarahy, fundación social"
+                  class="card-project__image"
+                  loading="lazy"
+                  width="600"
+                  height="375"
+                >
+                <div class="card-project__overlay" aria-hidden="true"></div>
+              </figure>
+            </div>
+            <div class="card-project__body">
+              <h3 class="card-project__title">La Pequeña Zarahy</h3>
+              <p class="card-project__description">Sitio web para fundación social dedicada a apoyar a niños y familias en situación de vulnerabilidad. Diseño cálido y accesible.</p>
+              <div class="card-project__tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-project__actions">
+                <a href="https://github.com/JonaPerezSoftware/la-pequena-zarahy" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">⟨/⟩ Código</a>
+                <a href="https://xn--lapequeazarahy-wnb.es/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">🌐 Ver Sitio</a>
+                <button class="btn btn--secondary btn--sm" data-modal-trigger="zarahy">🔍 Detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: TaskFlow -->
+          <article class="card card-project animate-on-scroll" data-technologies="react,node,javascript,css">
+            <div class="card-project__image-wrapper">
+              <figure>
+                <img
+                  src="assets/images/project-taskflow.png"
+                  alt="Captura de la aplicación TaskFlow, gestor de tareas tipo Kanban"
+                  class="card-project__image"
+                  loading="lazy"
+                  width="600"
+                  height="375"
+                >
+                <div class="card-project__overlay" aria-hidden="true"></div>
+              </figure>
+            </div>
+            <div class="card-project__body">
+              <h3 class="card-project__title">TaskFlow</h3>
+              <p class="card-project__description">App de gestión de tareas estilo Kanban con drag & drop, categorización y seguimiento de progreso en tiempo real.</p>
+              <div class="card-project__tags">
+                <span class="tag">React</span>
+                <span class="tag tag--primary">Node.js</span>
+                <span class="tag tag--accent">MongoDB</span>
+              </div>
+              <div class="card-project__actions">
+                <button class="btn btn--secondary btn--sm" data-modal-trigger="taskflow">🔍 Detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CodeWeather -->
+          <article class="card card-project animate-on-scroll" data-technologies="javascript,css">
+            <div class="card-project__image-wrapper">
+              <figure>
+                <img
+                  src="assets/images/project-codeweather.png"
+                  alt="Captura de CodeWeather, dashboard meteorológico interactivo"
+                  class="card-project__image"
+                  loading="lazy"
+                  width="600"
+                  height="375"
+                >
+                <div class="card-project__overlay" aria-hidden="true"></div>
+              </figure>
+            </div>
+            <div class="card-project__body">
+              <h3 class="card-project__title">CodeWeather</h3>
+              <p class="card-project__description">Dashboard meteorológico interactivo con datos en tiempo real, pronósticos extendidos y visualización mediante gráficas dinámicas.</p>
+              <div class="card-project__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag tag--primary">APIs REST</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+              <div class="card-project__actions">
+                <button class="btn btn--secondary btn--sm" data-modal-trigger="codeweather">🔍 Detalles</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────
+         CONTACTO
+         ────────────────────────────────────────── -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">// Contacto</span>
+          <h2 class="section__title">¿Hablamos?</h2>
+          <div class="section__divider"></div>
+          <p class="section__description">¿Tienes un proyecto en mente o quieres colaborar? ¡Escríbeme!</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Contact Info -->
+          <aside class="contact__info animate-on-scroll animate-left">
+            <div>
+              <h3>Conectemos</h3>
+              <p class="contact__info-text">
+                Estoy disponible para proyectos freelance, colaboraciones académicas o simplemente para conversar sobre tecnología.
+              </p>
+            </div>
+
+            <div class="contact__methods">
+              <a href="mailto:japrezch10@gmail.com" class="contact__method">
+                <div class="contact__method-icon" aria-hidden="true">📧</div>
+                <div>
+                  <span class="contact__method-label">Email</span>
+                  <p class="contact__method-value">japrezch10@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank" rel="noopener noreferrer" class="contact__method">
+                <div class="contact__method-icon" aria-hidden="true">💼</div>
+                <div>
+                  <span class="contact__method-label">LinkedIn</span>
+                  <p class="contact__method-value">Jonathan Pérez</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer" class="contact__method">
+                <div class="contact__method-icon" aria-hidden="true">🐙</div>
+                <div>
+                  <span class="contact__method-label">GitHub</span>
+                  <p class="contact__method-value">JonaPerezSoftware</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact__socials">
+              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="GitHub">🐙</a>
+              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="LinkedIn">💼</a>
+              <a href="mailto:japrezch10@gmail.com" class="contact__social-link" aria-label="Email">📧</a>
+            </div>
+          </aside>
+
+          <!-- Contact Form -->
+          <div class="contact__form-wrapper animate-on-scroll animate-right">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nombre completo</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                  required
+                >
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="tu@email.com"
+                  autocomplete="email"
+                  required
+                >
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Asunto</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="¿De qué quieres hablar?"
+                  required
+                >
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Mensaje</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Cuéntame sobre tu proyecto o idea..."
+                  rows="5"
+                  required
+                ></textarea>
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary" style="width:100%">🚀 Enviar Mensaje</button>
+            </form>
+
+            <div class="contact__form-success" id="form-success">
+              <div class="contact__form-success-icon" aria-hidden="true">✅</div>
+              <h3>¡Mensaje enviado!</h3>
+              <p class="text-muted">Gracias por escribirme. Te responderé lo antes posible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__text">
+        Diseñado y desarrollado con 💜 por <a href="#inicio">Jonathan Pérez</a> &copy; 2026
+      </p>
+      <nav class="footer__links" aria-label="Enlaces del pie de página">
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="#sobre-mi" class="footer__link">Sobre Mí</a>
+        <a href="#proyectos" class="footer__link">Proyectos</a>
+        <a href="design-system.html" class="footer__link">Design System</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCROLL TO TOP
+       ═══════════════════════════════════════════ -->
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Volver al inicio">↑</button>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECT MODAL
+       ═══════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"></div>
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__header">
+      <h3 class="modal__title" id="modal-title">Nombre del Proyecto</h3>
+      <button class="modal__close" id="modal-close" aria-label="Cerrar modal">&times;</button>
+    </div>
+    <div class="modal__body">
+      <img src="" alt="" class="modal__image" loading="lazy">
+      <h4>Descripción</h4>
+      <p class="modal__description"></p>
+      <h4 style="margin-top:var(--space-lg)">Problema que resuelve</h4>
+      <p class="modal__problem"></p>
+      <h4 style="margin-top:var(--space-lg)">Tecnologías</h4>
+      <div class="modal__tags" style="display:flex;flex-wrap:wrap;gap:var(--space-xs);margin-top:var(--space-xs)"></div>
+    </div>
+    <div class="modal__footer">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm modal__repo-link">⟨/⟩ Repositorio</a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm modal__live-link">🌐 Ver en Vivo</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════ -->
+  <script src="js/stars.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
