@@ -1,0 +1,226 @@
+/* ============================================
+   RESPONSIVE — Media Queries
+   ============================================ */
+
+/* ══════════════════════════════════════════════
+   TABLET (max-width: 1024px)
+   ══════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: var(--space-3xl) var(--space-lg);
+  }
+
+  .about__grid {
+    grid-template-columns: 240px 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* ══════════════════════════════════════════════
+   TABLET SMALL (max-width: 768px)
+   ══════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: var(--space-2xl) var(--space-md);
+    --fs-3xl: 2rem;
+    --fs-4xl: 2.5rem;
+  }
+
+  /* Navbar — Mobile Menu */
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xl);
+    background: var(--color-bg-surface);
+    border-left: 1px solid var(--color-border);
+    transform: translateX(100%);
+    transition: transform var(--transition-slow);
+    z-index: var(--z-modal);
+    padding: var(--space-xl);
+  }
+
+  .navbar__menu.open {
+    transform: translateX(0);
+  }
+
+  .navbar__link {
+    font-size: var(--fs-lg);
+  }
+
+  /* Mobile menu overlay */
+  .navbar__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal-backdrop);
+  }
+
+  .navbar__overlay.open {
+    display: block;
+  }
+
+  /* About Section */
+  .about__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about__avatar-wrapper {
+    order: -1;
+  }
+
+  .about__avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about__details {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  /* Section headers */
+  .section__title {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Projects */
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills */
+  .skills__grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  /* Contact */
+  .contact__form-wrapper {
+    padding: var(--space-xl);
+  }
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE (max-width: 480px)
+   ══════════════════════════════════════════════ */
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: var(--space-xl) var(--space-md);
+    --nav-height: 3.5rem;
+  }
+
+  .hero__content {
+    padding: var(--space-md);
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .about__avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about__details {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+  }
+
+  .skill-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-sm);
+  }
+
+  .filter-bar {
+    gap: var(--space-2xs);
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+    padding: var(--space-2xs) var(--space-sm);
+  }
+
+  .skills__categories {
+    gap: var(--space-2xs);
+  }
+
+  .skills__category-btn {
+    font-size: var(--fs-xs);
+    padding: var(--space-2xs) var(--space-sm);
+  }
+
+  .contact__form-wrapper {
+    padding: var(--space-lg);
+  }
+
+  .contact__socials {
+    justify-content: center;
+  }
+
+  .modal {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .modal__header,
+  .modal__body,
+  .modal__footer {
+    padding: var(--space-md);
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: var(--space-md);
+    right: var(--space-md);
+  }
+}
+
+/* ══════════════════════════════════════════════
+   LARGE DESKTOP (min-width: 1400px)
+   ══════════════════════════════════════════════ */
+
+@media (min-width: 1400px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
