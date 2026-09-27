@@ -26,7 +26,8 @@
   }
 
   .skills__grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+    justify-content: center;
   }
 }
 
@@ -117,7 +118,8 @@
 
   /* Skills */
   .skills__grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    justify-content: center;
   }
 
   /* Contact */
@@ -160,7 +162,8 @@
   }
 
   .skills__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-content: center;
     gap: var(--space-sm);
   }
 

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeManager = new ThemeManager();
   const navigation = new Navigation();
   const projectFilters = new ProjectFilters();
+  const skillsFilter = new SkillsFilter();
   const projectModal = new ProjectModal();
   const formValidator = new FormValidator('contact-form');
   const scrollAnimations = new ScrollAnimations();

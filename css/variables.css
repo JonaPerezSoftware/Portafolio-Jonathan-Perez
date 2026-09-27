@@ -213,6 +213,13 @@
   background: rgba(124, 58, 237, 0.05);
 }
 
+[data-theme="light"] .skills__category-btn.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+}
+
 /* Light mode skill badge */
 [data-theme="light"] .skill-badge {
   background: rgba(255, 255, 255, 0.9);
