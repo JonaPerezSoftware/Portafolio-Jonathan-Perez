@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Jonathan Abraham Pérez Chiquito — Estudiante de Ingeniería de Software. Desarrollo web, proyectos y habilidades técnicas.">
+  <meta name="description"
+    content="Portafolio de Jonathan Abraham Pérez Chiquito — Estudiante de Ingeniería de Software. Desarrollo web, proyectos y habilidades técnicas.">
   <meta name="author" content="Jonathan Abraham Pérez Chiquito">
   <meta name="theme-color" content="#050A18">
 
@@ -12,7 +14,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
@@ -23,12 +27,14 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- ═══════════════════════════════════════════
        STARFIELD CANVAS (Background)
        ═══════════════════════════════════════════ -->
-  <canvas id="stars-canvas" aria-hidden="true" style="position:fixed;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none;"></canvas>
+  <canvas id="stars-canvas" aria-hidden="true"
+    style="position:fixed;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none;"></canvas>
 
   <!-- ═══════════════════════════════════════════
        NAVBAR
@@ -55,7 +61,8 @@
         <button class="navbar__theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
           <span class="theme-icon">☀️</span>
         </button>
-        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="nav-menu">
           <span class="navbar__hamburger-line"></span>
           <span class="navbar__hamburger-line"></span>
           <span class="navbar__hamburger-line"></span>
@@ -98,7 +105,7 @@
       <div class="hero__scroll-indicator" aria-hidden="true">
         <span>Scroll</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
+          <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </div>
     </section>
@@ -118,14 +125,8 @@
           <div class="about__avatar-wrapper animate-on-scroll animate-left">
             <div class="about__avatar-glow" aria-hidden="true"></div>
             <figure>
-              <img
-                src="assets/images/avatar.png"
-                alt="Fotografía de Jonathan Abraham Pérez Chiquito"
-                class="about__avatar"
-                width="260"
-                height="260"
-                loading="lazy"
-              >
+              <img src="assets/images/avatar.jpg" alt="Fotografía de Jonathan Abraham Pérez Chiquito"
+                class="about__avatar" width="260" height="260" loading="lazy">
             </figure>
           </div>
 
@@ -133,7 +134,8 @@
             <h3>Jonathan Abraham <span class="text-gradient">Pérez Chiquito</span></h3>
             <p class="about__bio">
               Soy estudiante de Ingeniería de Software apasionado por crear experiencias digitales que generen impacto.
-              Me especializo en desarrollo web full-stack, combinando creatividad con código limpio para construir soluciones funcionales y visualmente atractivas.
+              Me especializo en desarrollo web full-stack, combinando creatividad con código limpio para construir
+              soluciones funcionales y visualmente atractivas.
               Actualmente enfocado en expandir mis habilidades en frameworks modernos de frontend y backend.
             </p>
 
@@ -192,10 +194,13 @@
         <!-- Category filters -->
         <div class="skills__categories animate-on-scroll" role="tablist" aria-label="Filtrar habilidades por categoría">
           <button class="skills__category-btn active" data-category="all" role="tab" aria-selected="true">Todas</button>
-          <button class="skills__category-btn" data-category="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="skills__category-btn" data-category="frontend" role="tab"
+            aria-selected="false">Frontend</button>
           <button class="skills__category-btn" data-category="backend" role="tab" aria-selected="false">Backend</button>
-          <button class="skills__category-btn" data-category="database" role="tab" aria-selected="false">Bases de datos</button>
-          <button class="skills__category-btn" data-category="tools" role="tab" aria-selected="false">Herramientas</button>
+          <button class="skills__category-btn" data-category="database" role="tab" aria-selected="false">Bases de
+            datos</button>
+          <button class="skills__category-btn" data-category="tools" role="tab"
+            aria-selected="false">Herramientas</button>
         </div>
 
         <div class="skills__grid stagger-children" id="skills-grid">
@@ -205,7 +210,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">HTML5</p>
               <span class="skill-badge__level">Avanzado</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="90"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="90"></div>
+              </div>
             </div>
           </div>
 
@@ -214,7 +221,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">CSS3</p>
               <span class="skill-badge__level">Avanzado</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="85"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="85"></div>
+              </div>
             </div>
           </div>
 
@@ -223,7 +232,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">JavaScript</p>
               <span class="skill-badge__level">Intermedio-Avanzado</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="75"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="75"></div>
+              </div>
             </div>
           </div>
 
@@ -232,7 +243,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">React</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="60"></div>
+              </div>
             </div>
           </div>
 
@@ -241,7 +254,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Vue.js</p>
               <span class="skill-badge__level">Básico</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="35"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="35"></div>
+              </div>
             </div>
           </div>
 
@@ -250,7 +265,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Angular</p>
               <span class="skill-badge__level">Aprendiendo</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="25"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="25"></div>
+              </div>
             </div>
           </div>
 
@@ -260,7 +277,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Node.js</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="60"></div>
+              </div>
             </div>
           </div>
 
@@ -269,7 +288,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Express.js</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="55"></div>
+              </div>
             </div>
           </div>
 
@@ -278,7 +299,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Python</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="60"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="60"></div>
+              </div>
             </div>
           </div>
 
@@ -287,7 +310,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">PHP / Laravel</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="55"></div>
+              </div>
             </div>
           </div>
 
@@ -297,7 +322,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">MySQL</p>
               <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="55"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="55"></div>
+              </div>
             </div>
           </div>
 
@@ -306,7 +333,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">PostgreSQL</p>
               <span class="skill-badge__level">Básico</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="40"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="40"></div>
+              </div>
             </div>
           </div>
 
@@ -316,7 +345,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Git / GitHub</p>
               <span class="skill-badge__level">Avanzado</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="80"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="80"></div>
+              </div>
             </div>
           </div>
 
@@ -325,7 +356,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">VS Code</p>
               <span class="skill-badge__level">Avanzado</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="85"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="85"></div>
+              </div>
             </div>
           </div>
 
@@ -334,7 +367,9 @@
             <div class="skill-badge__info">
               <p class="skill-badge__name">Figma</p>
               <span class="skill-badge__level">Básico</span>
-              <div class="skill-badge__bar"><div class="skill-badge__bar-fill" data-level="35"></div></div>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="35"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -370,28 +405,26 @@
           <article class="card card-project animate-on-scroll" data-technologies="html,css,javascript">
             <div class="card-project__image-wrapper">
               <figure>
-                <img
-                  src="assets/images/project-zarahy.png"
-                  alt="Captura del sitio web La Pequeña Zarahy, fundación social"
-                  class="card-project__image"
-                  loading="lazy"
-                  width="600"
-                  height="375"
-                >
+                <img src="assets/images/project-zarahy.png"
+                  alt="Captura del sitio web La Pequeña Zarahy, fundación social" class="card-project__image"
+                  loading="lazy" width="600" height="375">
                 <div class="card-project__overlay" aria-hidden="true"></div>
               </figure>
             </div>
             <div class="card-project__body">
               <h3 class="card-project__title">La Pequeña Zarahy</h3>
-              <p class="card-project__description">Sitio web para fundación social dedicada a apoyar a niños y familias en situación de vulnerabilidad. Diseño cálido y accesible.</p>
+              <p class="card-project__description">Sitio web para fundación social dedicada a apoyar a niños y familias
+                en situación de vulnerabilidad. Diseño cálido y accesible.</p>
               <div class="card-project__tags">
                 <span class="tag">HTML5</span>
                 <span class="tag">CSS3</span>
                 <span class="tag">JavaScript</span>
               </div>
               <div class="card-project__actions">
-                <a href="https://github.com/JonaPerezSoftware/la-pequena-zarahy" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">⟨/⟩ Código</a>
-                <a href="https://xn--lapequeazarahy-wnb.es/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">🌐 Ver Sitio</a>
+                <a href="https://github.com/JonaPerezSoftware/la-pequena-zarahy" target="_blank"
+                  rel="noopener noreferrer" class="btn btn--ghost btn--sm">⟨/⟩ Código</a>
+                <a href="https://xn--lapequeazarahy-wnb.es/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn--primary btn--sm">🌐 Ver Sitio</a>
                 <button class="btn btn--secondary btn--sm" data-modal-trigger="zarahy">🔍 Detalles</button>
               </div>
             </div>
@@ -401,20 +434,16 @@
           <article class="card card-project animate-on-scroll" data-technologies="react,node,javascript,css">
             <div class="card-project__image-wrapper">
               <figure>
-                <img
-                  src="assets/images/project-taskflow.png"
-                  alt="Captura de la aplicación TaskFlow, gestor de tareas tipo Kanban"
-                  class="card-project__image"
-                  loading="lazy"
-                  width="600"
-                  height="375"
-                >
+                <img src="assets/images/project-taskflow.png"
+                  alt="Captura de la aplicación TaskFlow, gestor de tareas tipo Kanban" class="card-project__image"
+                  loading="lazy" width="600" height="375">
                 <div class="card-project__overlay" aria-hidden="true"></div>
               </figure>
             </div>
             <div class="card-project__body">
               <h3 class="card-project__title">TaskFlow</h3>
-              <p class="card-project__description">App de gestión de tareas estilo Kanban con drag & drop, categorización y seguimiento de progreso en tiempo real.</p>
+              <p class="card-project__description">App de gestión de tareas estilo Kanban con drag & drop,
+                categorización y seguimiento de progreso en tiempo real.</p>
               <div class="card-project__tags">
                 <span class="tag">React</span>
                 <span class="tag tag--primary">Node.js</span>
@@ -430,20 +459,16 @@
           <article class="card card-project animate-on-scroll" data-technologies="javascript,css">
             <div class="card-project__image-wrapper">
               <figure>
-                <img
-                  src="assets/images/project-codeweather.png"
-                  alt="Captura de CodeWeather, dashboard meteorológico interactivo"
-                  class="card-project__image"
-                  loading="lazy"
-                  width="600"
-                  height="375"
-                >
+                <img src="assets/images/project-codeweather.png"
+                  alt="Captura de CodeWeather, dashboard meteorológico interactivo" class="card-project__image"
+                  loading="lazy" width="600" height="375">
                 <div class="card-project__overlay" aria-hidden="true"></div>
               </figure>
             </div>
             <div class="card-project__body">
               <h3 class="card-project__title">CodeWeather</h3>
-              <p class="card-project__description">Dashboard meteorológico interactivo con datos en tiempo real, pronósticos extendidos y visualización mediante gráficas dinámicas.</p>
+              <p class="card-project__description">Dashboard meteorológico interactivo con datos en tiempo real,
+                pronósticos extendidos y visualización mediante gráficas dinámicas.</p>
               <div class="card-project__tags">
                 <span class="tag">JavaScript</span>
                 <span class="tag tag--primary">APIs REST</span>
@@ -477,7 +502,8 @@
             <div>
               <h3>Conectemos</h3>
               <p class="contact__info-text">
-                Estoy disponible para proyectos freelance, colaboraciones académicas o simplemente para conversar sobre tecnología.
+                Estoy disponible para proyectos freelance, colaboraciones académicas o simplemente para conversar sobre
+                tecnología.
               </p>
             </div>
 
@@ -490,7 +516,8 @@
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank" rel="noopener noreferrer" class="contact__method">
+              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank"
+                rel="noopener noreferrer" class="contact__method">
                 <div class="contact__method-icon" aria-hidden="true">💼</div>
                 <div>
                   <span class="contact__method-label">LinkedIn</span>
@@ -498,7 +525,8 @@
                 </div>
               </a>
 
-              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer" class="contact__method">
+              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer"
+                class="contact__method">
                 <div class="contact__method-icon" aria-hidden="true">🐙</div>
                 <div>
                   <span class="contact__method-label">GitHub</span>
@@ -508,8 +536,10 @@
             </div>
 
             <div class="contact__socials">
-              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="GitHub">🐙</a>
-              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="LinkedIn">💼</a>
+              <a href="https://github.com/JonaPerezSoftware" target="_blank" rel="noopener noreferrer"
+                class="contact__social-link" aria-label="GitHub">🐙</a>
+              <a href="https://www.linkedin.com/in/jonathan-p%C3%A9rez-7415aa2b0" target="_blank"
+                rel="noopener noreferrer" class="contact__social-link" aria-label="LinkedIn">💼</a>
               <a href="mailto:japrezch10@gmail.com" class="contact__social-link" aria-label="Email">📧</a>
             </div>
           </aside>
@@ -519,55 +549,29 @@
             <form id="contact-form" novalidate>
               <div class="form-group">
                 <label for="contact-name" class="form-label">Nombre completo</label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  name="name"
-                  class="form-input"
-                  placeholder="Tu nombre"
-                  autocomplete="name"
-                  required
-                >
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Tu nombre"
+                  autocomplete="name" required>
                 <p class="form-error" aria-live="polite"></p>
               </div>
 
               <div class="form-group">
                 <label for="contact-email" class="form-label">Correo electrónico</label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  class="form-input"
-                  placeholder="tu@email.com"
-                  autocomplete="email"
-                  required
-                >
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="tu@email.com"
+                  autocomplete="email" required>
                 <p class="form-error" aria-live="polite"></p>
               </div>
 
               <div class="form-group">
                 <label for="contact-subject" class="form-label">Asunto</label>
-                <input
-                  type="text"
-                  id="contact-subject"
-                  name="subject"
-                  class="form-input"
-                  placeholder="¿De qué quieres hablar?"
-                  required
-                >
+                <input type="text" id="contact-subject" name="subject" class="form-input"
+                  placeholder="¿De qué quieres hablar?" required>
                 <p class="form-error" aria-live="polite"></p>
               </div>
 
               <div class="form-group">
                 <label for="contact-message" class="form-label">Mensaje</label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  class="form-textarea"
-                  placeholder="Cuéntame sobre tu proyecto o idea..."
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea id="contact-message" name="message" class="form-textarea"
+                  placeholder="Cuéntame sobre tu proyecto o idea..." rows="5" required></textarea>
                 <p class="form-error" aria-live="polite"></p>
               </div>
 
@@ -627,8 +631,10 @@
       <div class="modal__tags" style="display:flex;flex-wrap:wrap;gap:var(--space-xs);margin-top:var(--space-xs)"></div>
     </div>
     <div class="modal__footer">
-      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm modal__repo-link">⟨/⟩ Repositorio</a>
-      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm modal__live-link">🌐 Ver en Vivo</a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm modal__repo-link">⟨/⟩
+        Repositorio</a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm modal__live-link">🌐 Ver en
+        Vivo</a>
     </div>
   </div>
 
@@ -645,4 +651,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
