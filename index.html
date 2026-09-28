@@ -199,6 +199,7 @@
           <button class="skills__category-btn" data-category="backend" role="tab" aria-selected="false">Backend</button>
           <button class="skills__category-btn" data-category="database" role="tab" aria-selected="false">Bases de
             datos</button>
+          <button class="skills__category-btn" data-category="ai" role="tab" aria-selected="false">IA & Data</button>
           <button class="skills__category-btn" data-category="tools" role="tab"
             aria-selected="false">Herramientas</button>
         </div>
@@ -350,6 +351,29 @@
             </div>
           </div>
 
+          <!-- IA & Data -->
+          <div class="skill-badge animate-on-scroll" data-category="ai">
+            <div class="skill-badge__icon" aria-hidden="true">🧠</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">Deep Learning</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-badge animate-on-scroll" data-category="ai">
+            <div class="skill-badge__icon" aria-hidden="true">🤖</div>
+            <div class="skill-badge__info">
+              <p class="skill-badge__name">TensorFlow / Keras</p>
+              <span class="skill-badge__level">Intermedio</span>
+              <div class="skill-badge__bar">
+                <div class="skill-badge__bar-fill" data-level="65"></div>
+              </div>
+            </div>
+          </div>
+
           <!-- Herramientas -->
           <div class="skill-badge animate-on-scroll" data-category="tools">
             <div class="skill-badge__icon" aria-hidden="true">🔀</div>
@@ -411,6 +435,9 @@
           <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
           <button class="filter-btn" data-filter="html">HTML</button>
           <button class="filter-btn" data-filter="css">CSS</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+          <button class="filter-btn" data-filter="cnn">CNN</button>
         </div>
 
         <!-- Projects Grid -->
@@ -504,6 +531,35 @@
                 <a href="https://github.com/JonaPerezSoftware/Juego-Preguntas" target="_blank" rel="noopener noreferrer"
                   class="btn btn--ghost btn--sm">⟨/⟩ Código</a>
                 <button class="btn btn--secondary btn--sm" data-modal-trigger="juego-preguntas">🔍 Detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Clasificador de Galaxias -->
+          <article class="card card-project animate-on-scroll" data-technologies="python,deep-learning,cnn">
+            <div class="card-project__image-wrapper">
+              <figure>
+                <img src="assets/images/galaxy-1.png"
+                  alt="Clasificador de Galaxias con Deep Learning" class="card-project__image"
+                  loading="lazy" width="600" height="375"
+                  style="object-position: top center;">
+                <div class="card-project__overlay" aria-hidden="true"></div>
+              </figure>
+            </div>
+            <div class="card-project__body">
+              <h3 class="card-project__title">Clasificador de Galaxias con CNN</h3>
+              <p class="card-project__description">Comparativa de 4 arquitecturas de Deep Learning (MobileNetV2, DenseNet121, InceptionV3, ResNet50) para clasificar ~70,000 imágenes del dataset Galaxy Zoo en 5 clases.</p>
+              <div class="card-project__tags">
+                <span class="tag">Python</span>
+                <span class="tag tag--primary">Deep Learning</span>
+                <span class="tag tag--accent">CNN</span>
+              </div>
+              <div class="card-project__actions">
+                <a href="https://drive.google.com/drive/folders/1IU6pQ9-1LKThClcSjsQqAKSxmV4D7Y5Y?usp=sharing" target="_blank"
+                  rel="noopener noreferrer" class="btn btn--ghost btn--sm" title="Google Drive">📁 Dataset & Modelos</a>
+                <a href="https://drive.google.com/file/d/11F64jBACLS7-QhIHG9iuMeIB8kTi8SE0/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                  class="btn btn--primary btn--sm">📓 Colab Notebook</a>
+                <button class="btn btn--secondary btn--sm" data-modal-trigger="galaxy">🔍 Detalles</button>
               </div>
             </div>
           </article>

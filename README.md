@@ -145,10 +145,10 @@ Si usas Visual Studio Code, instala la extensión **Live Server** y haz clic der
 
 - 🌗 **Modo oscuro / claro** con transición animada y persistencia en localStorage
 - ✨ **Campo de estrellas** interactivo animado en Canvas
-- 🎯 **Filtros por categoría** en habilidades (Frontend, Backend, Bases de datos, Herramientas)
-- 🔎 **Filtros por tecnología** en proyectos (Angular, Laravel, PHP, JavaScript, MySQL, SQL Server, Bootstrap, HTML, CSS)
-- 📱 **Diseño responsivo** adaptado a desktop, tablet y móvil
-- 🖼️ **Galería de imágenes** en el modal de detalles de proyecto
+- 🎯 **Filtros por categoría** en habilidades (Frontend, Backend, Bases de datos, IA & Data, Herramientas)
+- 🔎 **Filtros por tecnología** en proyectos (Angular, Laravel, PHP, JavaScript, MySQL, SQL Server, Bootstrap, HTML, CSS, Python, Deep Learning, CNN)
+- 📱 **Diseño responsivo y armonioso** adaptado a desktop, tablet y móvil, con tarjetas centradas mediante Flexbox
+- 🖼️ **Galería de imágenes fluida** en el modal de detalles de proyecto
 - 🔒 **Aviso de repositorio privado** para proyectos empresariales con código confidencial
 - 📊 **Barras de nivel** animadas en las habilidades
 - 🎨 **Glassmorphism** y efectos de gradiente cósmico

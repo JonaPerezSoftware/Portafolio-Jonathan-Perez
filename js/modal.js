@@ -65,6 +65,24 @@ class ProjectModal {
         repoUrl: 'https://github.com/JonaPerezSoftware/Juego-Preguntas',
         liveUrl: '#',
       },
+      'galaxy': {
+        title: 'Clasificador de Galaxias con CNN',
+        image: 'assets/images/galaxy-1.png',
+        images: [
+          { src: 'assets/images/galaxy-1.png', alt: 'Vista general del comparador en Colab', caption: 'Comparador de arquitecturas CNN en Google Colab.' },
+          { src: 'assets/images/galaxy-2.png', alt: 'Carga de la imagen de prueba', caption: 'Preprocesamiento y carga de la imagen de una galaxia para predicción.' },
+          { src: 'assets/images/galaxy-3.png', alt: 'Resultados de las predicciones', caption: 'Resultados de las 4 arquitecturas con su nivel de confianza y clase predicha.' },
+          { src: 'assets/images/galaxy-4.png', alt: 'Gráficas de probabilidad', caption: 'Análisis detallado de probabilidad por modelo.' },
+          { src: 'assets/images/galaxy-5.png', alt: 'Evaluación del modelo', caption: 'Métricas de evaluación del modelo entrenado.' },
+          { src: 'assets/images/galaxy-6.png', alt: 'Matriz de confusión', caption: 'Matriz de confusión mostrando el rendimiento en la clasificación.' },
+          { src: 'assets/images/galaxy-7.png', alt: 'Conclusiones y detalles adicionales', caption: 'Detalles finales del proceso de clasificación.' }
+        ],
+        description: 'Proyecto de Inteligencia Artificial enfocado en la clasificación de galaxias utilizando Deep Learning. Se entrenaron y compararon cuatro arquitecturas de Redes Neuronales Convolucionales (MobileNetV2, DenseNet121, InceptionV3 y ResNet50) para procesar el dataset de Galaxy Zoo, el cual contiene aproximadamente 70,000 imágenes espaciales. El sistema logró clasificar exitosamente las galaxias en cinco categorías: espiral, espiral barrada, elíptica, vista de perfil e irregular.',
+        problem: 'Clasificar de forma automatizada decenas de miles de imágenes astronómicas mediante un comparador hecho en Google Colab para elegir la arquitectura más óptima, facilitando la investigación y el análisis del universo.',
+        technologies: ['Python', 'Deep Learning', 'CNN', 'TensorFlow / Keras'],
+        repoUrl: 'https://drive.google.com/drive/folders/1IU6pQ9-1LKThClcSjsQqAKSxmV4D7Y5Y?usp=sharing',
+        liveUrl: 'https://drive.google.com/file/d/11F64jBACLS7-QhIHG9iuMeIB8kTi8SE0/view?usp=sharing',
+      },
     };
 
     this.init();
