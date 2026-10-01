@@ -56,15 +56,6 @@ class ProjectModal {
         repoPrivateMessage: 'No es posible mostrar el repositorio con el código fuente de esta aplicación ya que la empresa propietaria (Agrícola e Industrial Primobanano S.A.) no lo permite bajo políticas de privacidad y acuerdos de confidencialidad comercial.',
         liveUrl: '#',
       },
-      'juego-preguntas': {
-        title: 'Juego de Preguntas',
-        image: 'assets/images/project-juego-preguntas.png',
-        description: 'Juego interactivo de preguntas y respuestas tipo trivia desarrollado con JavaScript. Cuenta con temporizador dinámico con cuenta regresiva por pregunta, sistema de puntuación acumulativa, botón de pistas, efectos sonoros y música de tensión envolvente. Incluye dos modalidades de juego: modo individual para poner a prueba conocimientos y modo Versus para competir de manera interactiva por turnos entre dos participantes.',
-        problem: 'Diseñar y desarrollar un juego web interactivo que gestione el estado dinámico en tiempo real (turnos de jugadores, cuenta regresiva, cálculo de puntajes y efectos sonoros interactivos) con una interfaz clara y responsiva.',
-        technologies: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap 5', 'SweetAlert2'],
-        repoUrl: 'https://github.com/JonaPerezSoftware/Juego-Preguntas',
-        liveUrl: '#',
-      },
       'galaxy': {
         title: 'Clasificador de Galaxias con CNN',
         image: 'assets/images/galaxy-1.png',
