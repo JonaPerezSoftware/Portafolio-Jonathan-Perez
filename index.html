@@ -135,7 +135,7 @@
             <h3>Jonathan Abraham <span class="text-gradient">Pérez Chiquito</span></h3>
             <p class="about__bio">
               Soy estudiante de Ingeniería de Software apasionado por crear experiencias digitales que generen impacto.
-              Me especializo en desarrollo web full-stack, combinando creatividad con código limpio para construir
+              Me especializo en desarrollo web, combinando creatividad con código limpio para construir
               soluciones funcionales y visualmente atractivas.
               Actualmente enfocado en expandir mis habilidades en frameworks modernos de frontend y backend.
             </p>
@@ -152,7 +152,7 @@
                 <div class="about__detail-icon" aria-hidden="true">📍</div>
                 <div>
                   <span class="about__detail-label">Enfoque</span>
-                  <p class="about__detail-value">Desarrollo Web Full-Stack</p>
+                  <p class="about__detail-value">Desarrollo Web</p>
                 </div>
               </div>
               <div class="about__detail">
@@ -251,16 +251,6 @@
             </div>
           </div>
 
-          <div class="skill-badge animate-on-scroll" data-category="frontend">
-            <div class="skill-badge__icon" aria-hidden="true">💚</div>
-            <div class="skill-badge__info">
-              <p class="skill-badge__name">Vue.js</p>
-              <span class="skill-badge__level">Básico</span>
-              <div class="skill-badge__bar">
-                <div class="skill-badge__bar-fill" data-level="35"></div>
-              </div>
-            </div>
-          </div>
 
           <div class="skill-badge animate-on-scroll" data-category="frontend">
             <div class="skill-badge__icon" aria-hidden="true">🅰️</div>
@@ -285,16 +275,6 @@
             </div>
           </div>
 
-          <div class="skill-badge animate-on-scroll" data-category="backend">
-            <div class="skill-badge__icon" aria-hidden="true">🚂</div>
-            <div class="skill-badge__info">
-              <p class="skill-badge__name">Express.js</p>
-              <span class="skill-badge__level">Intermedio</span>
-              <div class="skill-badge__bar">
-                <div class="skill-badge__bar-fill" data-level="55"></div>
-              </div>
-            </div>
-          </div>
 
           <div class="skill-badge animate-on-scroll" data-category="backend">
             <div class="skill-badge__icon" aria-hidden="true">🐍</div>
@@ -330,16 +310,6 @@
             </div>
           </div>
 
-          <div class="skill-badge animate-on-scroll" data-category="database">
-            <div class="skill-badge__icon" aria-hidden="true">🐘</div>
-            <div class="skill-badge__info">
-              <p class="skill-badge__name">PostgreSQL</p>
-              <span class="skill-badge__level">Básico</span>
-              <div class="skill-badge__bar">
-                <div class="skill-badge__bar-fill" data-level="40"></div>
-              </div>
-            </div>
-          </div>
 
           <div class="skill-badge animate-on-scroll" data-category="database">
             <div class="skill-badge__icon" aria-hidden="true">🛢️</div>
@@ -399,9 +369,9 @@
           </div>
 
           <div class="skill-badge animate-on-scroll" data-category="tools">
-            <div class="skill-badge__icon" aria-hidden="true">🎨</div>
+            <div class="skill-badge__icon" aria-hidden="true">🧵</div>
             <div class="skill-badge__info">
-              <p class="skill-badge__name">Figma</p>
+              <p class="skill-badge__name">Stitch</p>
               <span class="skill-badge__level">Básico</span>
               <div class="skill-badge__bar">
                 <div class="skill-badge__bar-fill" data-level="35"></div>
@@ -433,12 +403,14 @@
           <button class="filter-btn" data-filter="javascript">JavaScript</button>
           <button class="filter-btn" data-filter="mysql">MySQL</button>
           <button class="filter-btn" data-filter="sqlserver">SQL Server</button>
-          <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
           <button class="filter-btn" data-filter="html">HTML</button>
           <button class="filter-btn" data-filter="css">CSS</button>
           <button class="filter-btn" data-filter="python">Python</button>
           <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
           <button class="filter-btn" data-filter="cnn">CNN</button>
+          <button class="filter-btn" data-filter="c">C/C++</button>
+          <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+          <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
         </div>
 
         <!-- Projects Grid -->
@@ -513,27 +485,54 @@
           <article class="card card-project animate-on-scroll" data-technologies="python,deep-learning,cnn">
             <div class="card-project__image-wrapper">
               <figure>
-                <img src="assets/images/galaxy-1.png"
-                  alt="Clasificador de Galaxias con Deep Learning" class="card-project__image"
-                  loading="lazy" width="600" height="375"
+                <img src="assets/images/galaxy-1.png" alt="Clasificador de Galaxias con Deep Learning"
+                  class="card-project__image" loading="lazy" width="600" height="375"
                   style="object-position: top center;">
                 <div class="card-project__overlay" aria-hidden="true"></div>
               </figure>
             </div>
             <div class="card-project__body">
               <h3 class="card-project__title">Clasificador de Galaxias con CNN</h3>
-              <p class="card-project__description">Comparativa de 4 arquitecturas de Deep Learning (MobileNetV2, DenseNet121, InceptionV3, ResNet50) para clasificar ~70,000 imágenes del dataset Galaxy Zoo en 5 clases.</p>
+              <p class="card-project__description">Comparativa de 4 arquitecturas de Deep Learning (MobileNetV2,
+                DenseNet121, InceptionV3, ResNet50) para clasificar ~70,000 imágenes del dataset Galaxy Zoo en 5 clases.
+              </p>
               <div class="card-project__tags">
                 <span class="tag">Python</span>
                 <span class="tag tag--primary">Deep Learning</span>
                 <span class="tag tag--accent">CNN</span>
               </div>
               <div class="card-project__actions">
-                <a href="https://drive.google.com/drive/folders/1IU6pQ9-1LKThClcSjsQqAKSxmV4D7Y5Y?usp=sharing" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--ghost btn--sm" title="Google Drive">📁 Dataset & Modelos</a>
-                <a href="https://drive.google.com/file/d/11F64jBACLS7-QhIHG9iuMeIB8kTi8SE0/view?usp=sharing" target="_blank" rel="noopener noreferrer"
-                  class="btn btn--primary btn--sm">📓 Colab Notebook</a>
+                <a href="https://drive.google.com/drive/folders/1IU6pQ9-1LKThClcSjsQqAKSxmV4D7Y5Y?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm" title="Google Drive">📁
+                  Dataset & Modelos</a>
+                <a href="https://drive.google.com/file/d/11F64jBACLS7-QhIHG9iuMeIB8kTi8SE0/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">📓 Colab Notebook</a>
                 <button class="btn btn--secondary btn--sm" data-modal-trigger="galaxy">🔍 Detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Clasificador de Objetos Escolares -->
+          <article class="card card-project animate-on-scroll"
+            data-technologies="c,c++,machine-learning,computer-vision">
+            <div class="card-project__image-wrapper">
+              <figure>
+                <video src="assets/images/video%20de%20respaldo%20modelo.mp4" class="card-project__image" autoplay muted
+                  loop playsinline style="object-fit: cover; width: 100%; height: 100%;"></video>
+                <div class="card-project__overlay" aria-hidden="true"></div>
+              </figure>
+            </div>
+            <div class="card-project__body">
+              <h3 class="card-project__title">Clasificador Inteligente ESP32-CAM</h3>
+              <p class="card-project__description">Sistema inteligente de clasificación de objetos escolares con visión
+                artificial e IA embebida (Edge Impulse) ejecutado localmente con control de actuadores.</p>
+              <div class="card-project__tags">
+                <span class="tag">C/C++</span>
+                <span class="tag tag--primary">Machine Learning</span>
+                <span class="tag tag--accent">Edge Impulse</span>
+              </div>
+              <div class="card-project__actions">
+                <button class="btn btn--secondary btn--sm" data-modal-trigger="esp32-clasificador">🔍 Detalles</button>
               </div>
             </div>
           </article>
@@ -692,6 +691,8 @@
       <div class="modal__gallery" id="modal-gallery">
         <div class="modal__main-image-container">
           <img src="" alt="" class="modal__image" id="modal-main-image" loading="lazy">
+          <video src="" class="modal__video" id="modal-main-video" controls autoplay playsinline
+            style="display: none; width: 100%; border-radius: var(--radius-md);"></video>
           <span class="modal__image-caption" id="modal-image-caption" style="display: none;"></span>
         </div>
         <div class="modal__thumbnails" id="modal-thumbnails" style="display: none;"></div>

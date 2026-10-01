@@ -1,6 +1,6 @@
 # 🌌 Portafolio — Jonathan Abraham Pérez Chiquito
 
-Portafolio personal de desarrollo de software construido como sitio web estático con un diseño premium, modo oscuro/claro, animaciones fluidas y un campo de estrellas interactivo de fondo.
+Portafolio personal de desarrollo web construido como sitio web estático con un diseño premium, modo oscuro/claro, animaciones fluidas y un campo de estrellas interactivo de fondo.
 
 <p align="center">
   <img src="screenshots/hero-dark.png" alt="Vista principal del portafolio en modo oscuro" width="90%">
@@ -16,7 +16,7 @@ Sitio web tipo **Single Page Application** (SPA estática) que presenta mi perfi
 - **Campo de estrellas animado** en canvas como fondo inmersivo.
 - **Animaciones de scroll** con Intersection Observer para revelación progresiva de secciones.
 - **Filtros interactivos** tanto para habilidades (por categoría) como para proyectos (por tecnología).
-- **Modal de detalles** para cada proyecto con galería de imágenes y descripción extendida.
+- **Modal de detalles** para cada proyecto con galería de imágenes/video y descripción extendida.
 - **Formulario de contacto** con validación en tiempo real.
 - **Diseño 100% responsivo** adaptado a desktop, tablet y móvil.
 
@@ -30,7 +30,7 @@ Sitio web tipo **Single Page Application** (SPA estática) que presenta mi perfi
 | **Estilos** | CSS3 vanilla (variables CSS, grid, flexbox, glassmorphism, gradientes) |
 | **Lógica** | JavaScript ES6+ (clases, módulos, Intersection Observer, Canvas API) |
 | **Diseño** | Sistema de diseño propio con tokens (colores, tipografía, espaciado, sombras) |
-| **Tipografía** | [Inter](https://fonts.google.com/specimen/Inter), [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (Google Fonts) |
+| **Tipografía** | [Inter](https://fonts.google.com/specimen/Inter), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), [Fira Code](https://fonts.google.com/specimen/Fira+Code) (Google Fonts) |
 | **Iconos** | Emojis nativos Unicode |
 
 > **Sin frameworks ni dependencias externas.** Todo el código es vanilla HTML, CSS y JavaScript.
@@ -45,7 +45,7 @@ portfolio/
 ├── design-system.html         # Guía del sistema de diseño
 ├── README.md
 ├── assets/
-│   └── images/                # Imágenes de proyectos y avatar
+│   └── images/                # Imágenes, videos y avatar
 ├── css/
 │   ├── variables.css          # Tokens de diseño y modo claro/oscuro
 │   ├── base.css               # Reset y estilos base
@@ -61,7 +61,7 @@ portfolio/
 │   ├── theme.js               # Gestión del tema oscuro/claro
 │   ├── navigation.js          # Navbar, scroll suave, menú móvil
 │   ├── filters.js             # Filtros de proyectos y habilidades
-│   ├── modal.js               # Modal de detalles de proyecto y repo privado
+│   ├── modal.js               # Modal de detalles de proyecto (imágenes y video)
 │   ├── form.js                # Validación del formulario de contacto
 │   └── animations.js          # Intersection Observer para animaciones de scroll
 └── screenshots/               # Capturas de pantalla
@@ -146,13 +146,24 @@ Si usas Visual Studio Code, instala la extensión **Live Server** y haz clic der
 - 🌗 **Modo oscuro / claro** con transición animada y persistencia en localStorage
 - ✨ **Campo de estrellas** interactivo animado en Canvas
 - 🎯 **Filtros por categoría** en habilidades (Frontend, Backend, Bases de datos, IA & Data, Herramientas)
-- 🔎 **Filtros por tecnología** en proyectos (Angular, Laravel, PHP, JavaScript, MySQL, SQL Server, Bootstrap, HTML, CSS, Python, Deep Learning, CNN)
-- 📱 **Diseño responsivo y armonioso** adaptado a desktop, tablet y móvil, con tarjetas centradas mediante Flexbox
-- 🖼️ **Galería de imágenes fluida** en el modal de detalles de proyecto
+- 🔎 **Filtros por tecnología** en proyectos (Angular, Laravel, PHP, JavaScript, MySQL, SQL Server, HTML, CSS, Python, Deep Learning, CNN, C/C++, Machine Learning, Computer Vision)
+- 📱 **Diseño responsivo y armonioso** adaptado a desktop, tablet y móvil
+- 🖼️ **Galería de imágenes y video** fluida en el modal de detalles de proyecto
 - 🔒 **Aviso de repositorio privado** para proyectos empresariales con código confidencial
 - 📊 **Barras de nivel** animadas en las habilidades
 - 🎨 **Glassmorphism** y efectos de gradiente cósmico
 - ♿ **Accesibilidad** con roles ARIA, `aria-selected`, navegación por teclado
+
+---
+
+## 🗂️ Proyectos Incluidos
+
+| Proyecto | Descripción | Tecnologías |
+|---|---|---|
+| **La Pequeña Zarahy** | Sitio web para negocio de ropa infantil | HTML, CSS, JavaScript |
+| **Talento Humano — Primobanano** | Módulo de contratación empresarial (confidencial) | Angular, Laravel, PHP, MySQL, SQL Server |
+| **Clasificador de Galaxias con CNN** | Comparativa de 4 arquitecturas Deep Learning sobre el dataset Galaxy Zoo | Python, TensorFlow/Keras, CNN |
+| **Clasificador Inteligente ESP32-CAM** | IA embebida para clasificación de objetos escolares con control de actuadores | C/C++, Edge Impulse, Machine Learning, Computer Vision |
 
 ---
 

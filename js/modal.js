@@ -74,6 +74,15 @@ class ProjectModal {
         repoUrl: 'https://drive.google.com/drive/folders/1IU6pQ9-1LKThClcSjsQqAKSxmV4D7Y5Y?usp=sharing',
         liveUrl: 'https://drive.google.com/file/d/11F64jBACLS7-QhIHG9iuMeIB8kTi8SE0/view?usp=sharing',
       },
+      'esp32-clasificador': {
+        title: 'Clasificador Inteligente de Objetos Escolares mediante IA y ESP32-CAM',
+        video: 'assets/images/video de respaldo modelo.mp4',
+        description: 'Innovador sistema de Inteligencia Artificial Embebida (Edge AI) diseñado para clasificar objetos escolares mediante Visión por Computadora. Utilizando un microcontrolador ESP32-CAM, el sistema captura imágenes en tiempo real y las analiza de forma local a través de un modelo de Machine Learning entrenado con Edge Impulse. Al identificar el objeto (cuaderno, mochila o útil escolar), el dispositivo activa respuestas físicas automatizadas: enciende un LED específico y ajusta la posición de un servomotor. Hardware integrado: Módulo ESP32-CAM AI-Thinker, Cámara OV2640, Servomotor, Indicadores LED (Verde para cuaderno, Azul para mochila, Amarillo para útil, Rojo para desconocido) y circuitos de soporte.',
+        problem: 'Implementar un modelo de Machine Learning capaz de ejecutar inferencias de procesamiento de imágenes directamente en el borde (Edge Computing) sobre hardware de bajos recursos (ESP32-CAM), eliminando la dependencia de servidores externos, reduciendo la latencia y permitiendo una automatización física en tiempo real.',
+        technologies: ['C/C++', 'ESP32-CAM', 'Edge Impulse', 'Machine Learning', 'Computer Vision', 'Arduino IDE', 'ESP32Servo', 'GPIO', 'OV2640'],
+        repoUrl: '#',
+        liveUrl: '#',
+      },
     };
 
     this.init();
@@ -141,10 +150,23 @@ class ProjectModal {
 
     /* Gallery handling */
     const mainImage = this.modal.querySelector('#modal-main-image');
+    const mainVideo = this.modal.querySelector('#modal-main-video');
     const imageCaption = this.modal.querySelector('#modal-image-caption');
     const thumbnailsContainer = this.modal.querySelector('#modal-thumbnails');
 
-    if (project.images && project.images.length > 1) {
+    if (project.video) {
+      /* Video handling */
+      if (mainImage) mainImage.style.display = 'none';
+      if (mainVideo) {
+        mainVideo.src = project.video;
+        mainVideo.style.display = 'block';
+      }
+      if (imageCaption) imageCaption.style.display = 'none';
+      if (thumbnailsContainer) {
+        thumbnailsContainer.innerHTML = '';
+        thumbnailsContainer.style.display = 'none';
+      }
+    } else if (project.images && project.images.length > 1) {
       /* Multi-image gallery */
       const firstImg = project.images[0];
       mainImage.src = firstImg.src;
@@ -182,7 +204,12 @@ class ProjectModal {
       });
     } else {
       /* Single image */
-      mainImage.src = project.image;
+      if (mainVideo) {
+        mainVideo.pause();
+        mainVideo.style.display = 'none';
+      }
+      if (mainImage) mainImage.style.display = 'block';
+      mainImage.src = project.image || '';
       mainImage.alt = `Captura de ${project.title}`;
       if (imageCaption) imageCaption.style.display = 'none';
       if (thumbnailsContainer) {
@@ -237,6 +264,11 @@ class ProjectModal {
     this.modal?.classList.remove('active');
     this.backdrop?.classList.remove('active');
     document.body.style.overflow = '';
+    const mainVideo = this.modal?.querySelector('#modal-main-video');
+    if (mainVideo) {
+      mainVideo.pause();
+      mainVideo.src = '';
+    }
   }
 
   openPrivateRepoAlert(projectId) {
