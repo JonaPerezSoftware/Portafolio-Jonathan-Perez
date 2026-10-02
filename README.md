@@ -71,7 +71,7 @@ portfolio/
 
 ## 🚀 Instrucciones de Visualización
 
-### Opción 1: Servidor local con Python
+### Opción 1: Link directo
 
 Ingresa a este link: https://jonaperezsoftware.github.io/Portafolio-Jonathan-Perez/ 
 
