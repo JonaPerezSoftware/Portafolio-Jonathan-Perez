@@ -73,6 +73,10 @@ portfolio/
 
 ### Opción 1: Servidor local con Python
 
+Ingresa a este link: https://jonaperezsoftware.github.io/Portafolio-Jonathan-Perez/ 
+
+### Opción 2: Servidor local con Python
+
 ```bash
 # Clonar el repositorio
 git clone https://github.com/JonaPerezSoftware/Portafolio-Jonathan-Perez.git
@@ -84,18 +88,18 @@ python -m http.server 8080
 
 Luego abrir en el navegador: **[http://localhost:8080](http://localhost:8080)**
 
-### Opción 2: Servidor local con Node.js
+### Opción 3: Servidor local con Node.js
 
 ```bash
 # Instalar un servidor estático
 npx -y serve .
 ```
 
-### Opción 3: Abrir directamente
+### Opción 4: Abrir directamente
 
 Simplemente abre el archivo `index.html` en tu navegador. Algunas funcionalidades como las fuentes de Google pueden requerir conexión a internet.
 
-### Opción 4: Live Server (VS Code)
+### Opción 5: Live Server (VS Code)
 
 Si usas Visual Studio Code, instala la extensión **Live Server** y haz clic derecho sobre `index.html` → **"Open with Live Server"**.
 
